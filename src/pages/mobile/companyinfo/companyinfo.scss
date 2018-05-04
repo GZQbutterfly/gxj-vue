@@ -1,0 +1,16 @@
+.companyinfo-container{
+    height: 100%;
+    .title{
+        margin: 25px 0;
+    }
+    .info{
+        color: #b7b7b7;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    &_ft{
+        p{
+            margin: 15px 0;
+        }
+    }
+}

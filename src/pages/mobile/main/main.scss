@@ -1,0 +1,45 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+}
+.flex__item{
+    flex: 1;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-align-m {
+    align-items: center;
+}
+
+.flex-align-b {
+    align-items: flex-end;
+}
+
+.flex-align-t {
+    align-items: flex-start;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}

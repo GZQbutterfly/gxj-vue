@@ -1,0 +1,48 @@
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    &_hd {
+        height: 166px;
+        padding-top: 15px;
+        .buy-btn{
+            margin: auto;
+            margin-top: 22px;
+            height: 36px;
+            line-height: 36px;
+            width: 122px;
+            color: #fff;
+            background-color: #eb2326;
+            border-radius: 2px;
+        }
+    }
+    &_bd {
+        position: relative;
+        height: 247px;
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &_ft{
+        img {
+            width: 100%;
+            height: 135px;
+            margin-bottom: 5px;
+        }
+    }
+    .company-info{
+        height: 60px;
+        color: #b8b8b8;
+        line-height: 25px;
+    }
+}
