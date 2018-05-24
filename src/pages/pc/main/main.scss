@@ -1,18 +1,67 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-size: 16px;
+
+body {
+    font-size: 16px; //font-family: "Microsoft YaHei";
+    font-family: "PingFangSC-Regular", "PingFang SC", "Microsoft YaHei", Arial, Helvetica, "tohoma,sans-serif";
+    overflow-y: scroll;
 }
-ul,li{
+
+ul,
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-img{
+
+img {
     display: block;
     border: none;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+@media all and (max-width:1200px) {
+    .media-768 {
+        width: 768px !important;
+    }
+    .media-708 {
+        width: 708px !important;
+    }
+    .text-size-32 {
+        font-size: 32px !important;
+    }
+    .text-size-28 {
+        font-size: 28px !important;
+    }
+    .text-size-26 {
+        font-size: 26px !important;
+    }
+    .text-size-18 {
+        font-size: 18px !important;
+    }
+    .text-size-16 {
+        font-size: 16px !important;
+    }
+    .text-size-15 {
+        font-size: 15px !important;
+    }
+    .text-size-14 {
+        font-size: 14px !important;
+    }
+    .text-size-13 {
+        font-size: 13px !important;
+    }
+    .text-size-10 {
+        font-size: 10px !important;
+    }
 }

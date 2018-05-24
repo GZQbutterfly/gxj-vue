@@ -1,5 +1,7 @@
 import './main/main';
+import './main/main.scss';
 
+import './main/vconsole.log';
 
 (function (doc, win) {
     var winWidth = win.innerWidth;

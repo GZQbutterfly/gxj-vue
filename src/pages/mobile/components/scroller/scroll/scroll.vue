@@ -335,7 +335,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 0;
+    padding: 16px 0 70px;
+    .before-trigger{
+      color: #aaa;
+    }
   }
 }
 </style>

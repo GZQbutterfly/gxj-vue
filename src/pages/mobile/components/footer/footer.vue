@@ -1,5 +1,6 @@
 <template>
     <div class="footer-container" ref="footerContainerRef">
+        
     </div>
 </template>
 <script>

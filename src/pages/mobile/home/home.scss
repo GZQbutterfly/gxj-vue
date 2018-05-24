@@ -3,9 +3,19 @@
     width: 100%;
     height: 100%;
     background-color: #fff;
+    font-size: 15px;
     &_hd {
-        height: 166px;
+        position: relative;
+        z-index: 11;
         padding-top: 15px;
+        .title{
+            font-size: 24px;
+            margin: 20px 0 10px;
+            font-weight: 400;
+        }
+        .info{
+            font-size: 14px;
+        }
         .buy-btn{
             margin: auto;
             margin-top: 22px;
@@ -19,7 +29,8 @@
     }
     &_bd {
         position: relative;
-        height: 247px;
+        max-height: 313px;
+        // margin-top: -30px;
         .swiper-container {
             width: 100%;
             height: 100%;
@@ -27,6 +38,16 @@
         .swiper-wrapper {
             width: 100%;
             height: 100%;
+        }
+        .swiper-pagination-bullet{
+            background-color: #fff;
+            border: 1px solid #c7c7c7;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .swiper-pagination-bullet-active{
+            background-color: #bfbfbf;
         }
         img {
             width: 100%;
@@ -37,12 +58,7 @@
         img {
             width: 100%;
             height: 135px;
-            margin-bottom: 5px;
+            margin-top: 5px;
         }
-    }
-    .company-info{
-        height: 60px;
-        color: #b8b8b8;
-        line-height: 25px;
     }
 }

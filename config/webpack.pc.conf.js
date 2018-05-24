@@ -5,6 +5,8 @@ const merge = require('webpack-merge');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
 
 module.exports = merge(baseConfig, {
     output: {
@@ -33,5 +35,11 @@ module.exports = merge(baseConfig, {
                 to: path.join(__dirname, '../dist/pc/static')
             }
         ]),
+        new CleanWebpackPlugin(['../dist/pc'], {
+            root: __dirname,
+            verbose: true,
+            dry: false,
+            allowExternal: true
+        })
     ]
 });

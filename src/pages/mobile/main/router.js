@@ -9,6 +9,10 @@ const routes = [
         path: '/',
         component: Home
     },
+    {
+        path: '/home',
+        component: Home
+    },
     // 公司介绍
     {
         path: '/companyinfo',
@@ -21,29 +25,33 @@ const routes = [
     },
     // 新闻中心
     {
-        path: '/newcenter',
-        name: 'newcenter',
+        path: '/newscenter',
+        name: 'newscenter',
         component: resolve => {
             require.ensure([], require => {
-                resolve(require('../newcenter/newcenter.vue'));
-            }, 'pages/newcenter');
+                resolve(require('../newscenter/newscenter.vue'));
+            }, 'pages/newscenter');
         }
     },
     // 加入我们
     {
-        path: '/joinmy',
-        name: 'joinmy',
+        path: '/jobs',
+        name: 'jobs',
         component: resolve => {
             require.ensure([], require => {
-                resolve(require('../joinmy/joinmy.vue'));
-            }, 'pages/joinmy');
+                resolve(require('../jobs/jobs.vue'));
+            }, 'pages/jobs');
         }
+    },
+    {
+        path: '**',
+        redirect: '/'
     }
 ];
 
 // ==>
 const router = new VueRouter({
-    mode: 'history',
+    mode: process.env.R_M == 'hash' ? 'hash' : 'history',
     routes
 });
 

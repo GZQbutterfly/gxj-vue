@@ -1,0 +1,47 @@
+.jobs-container {
+    height: 100%;
+    padding: 12px;
+    h3{
+        font-weight: bolder;
+    }
+    &_hd {
+        margin-top: 25px;
+        .title {
+            font-size: 24px; 
+            color: #000;
+            font-weight: 500;
+        }
+        .info {
+            color: #b3b3b3;
+            font-size: 16px;
+            margin-bottom: 30px;
+            margin-top: 10px;
+            line-height: 25px;
+        }
+    }
+    &_bd {
+        .title {
+            margin: 25px 0 15px;
+            color: #000;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        .info {
+            color: #b3b3b3;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    &_ft {
+        .job-desc {
+            font-size: 19px;
+            margin: 45px 0 15px;
+        }
+        .job-info {
+            font-size: 24px;
+            color: #000;
+            margin: 5px 0;
+            font-weight: bolder;
+        }
+    }
+}

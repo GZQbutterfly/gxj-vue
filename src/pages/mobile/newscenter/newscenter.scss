@@ -1,0 +1,37 @@
+.newscenter-container {
+    height: 100%;
+    .info-box {
+        padding: 0 12px;
+        border-bottom: 2px solid #fafafa;
+        &:not(:first-child) {
+            margin-bottom: 20px;
+        }
+        &_hd {
+            margin: 20px 0 10px;
+            h3 {
+                font-size: 20px;
+                font-weight: bolder;
+            }
+        }
+        &_bd {
+            color: #b7b7b7;
+            div{
+                line-height: 25px;
+            }
+            img {
+                width: 100%;
+                height: 162px;
+            }
+        }
+        &_ft {
+            padding: 15px 0;
+            color: #b7b7b7;
+            div:last-child {
+                color: #e63e42;
+            }
+        }
+    }
+    .cube-pullup-wrapper .before-trigger{
+        margin-bottom: 30px;
+    }
+}

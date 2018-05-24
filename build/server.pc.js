@@ -1,9 +1,7 @@
 // 构建本地服务器
 let webpack = require('webpack'),
     WebpackDevServer = require('webpack-dev-server'),
-    config = require('./pc.dev.js');
-
-
+    config = require('./pc.prod.js');
 
 let pathname = 'localhost',
 port = 3002;

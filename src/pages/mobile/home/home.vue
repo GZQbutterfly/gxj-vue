@@ -2,25 +2,25 @@
     <div class="home-container" ref="homeContainerRef">
         <div>
             <div class="home-container_hd text-center">
-                <div><h3>谷小酒微醺版</h3></div>
-                <div>五粮酿造|冰川泉水|固态发酵|大师之作</div>
-                <div class="buy-btn">点击购买</div>
+                <div class="title">谷小酒微醺版</div>
+                <div class="info">精选五粮|冰川泉水|固态发酵|大师之作</div>
+                <div class="buy-btn" @click="goBuy">点击购买</div>
             </div>
             <div class="home-container_bd">
                 <div class="swiper-container" ref="swiperRef">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" v-for="(item, index) in bannerList" :key="index">
-                            <img :src="item.imgsrc" alt="">
+                        <div class="swiper-slide" v-for="(item, index) in bannerList" :key="index" @click="bannerToUrl(item)">
+                            <img :src="item.imgUrl" alt="">
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination" v-show="showPage"></div>
                 </div>
             </div>
-            <div class="home-container_ft">
+            <div class="home-container_ft" v-show="showFt">
                 <div>
                     <img :src="item.imgsrc" :alt="item.label" v-for="(item, index) in mainList" :key="index" @click="goPath(item)">
                 </div>
-                <div class="company-info text-center">
+                <div class="company-flag text-center">
                     <div>Copyright © guxiaojiu.</div>
                     <div>All Rights Reserved 蜀ICP备18007116号</div>
                 </div>

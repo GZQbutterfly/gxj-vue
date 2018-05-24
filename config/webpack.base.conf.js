@@ -2,6 +2,7 @@
 const path = require('path');
 
 
+
 module.exports = {
     output: {
         path: path.join(__dirname, '../dist'),
@@ -29,11 +30,18 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
-                exclude: /node_modules/
+                use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
-                test: /\.(png|svg|jpg|gif|eot|woff)$/,
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader', 'postcss-loader']
+            },
+            {
+                test: /\.(styl|stylus)$/,
+                use: ['style-loader', 'css-loader', 'postcss-loader', {loader:'stylus-loader',options:{'resolve url': true}}]
+            },
+            {
+                test: /\.(png|svg|jpg|gif|eot|woff|ttf)$/,
                 use: [
                     {
                         loader: 'url-loader?limit=8192&name=static/images/build/[name].[hash:8].[ext]',
@@ -41,8 +49,7 @@ module.exports = {
                             publicPath: '/'
                         }
                     }
-                ],
-                exclude: /node_modules/
+                ]
             }
         ]
     },

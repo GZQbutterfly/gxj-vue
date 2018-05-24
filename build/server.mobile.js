@@ -3,10 +3,8 @@ let webpack = require('webpack'),
     WebpackDevServer = require('webpack-dev-server'),
     config = require('./mobile.dev.js');
 
-
-
 let pathname = 'localhost',
-port = 3001;
+    port = 3001;
 
 // ==>
 new WebpackDevServer(webpack(config), {

@@ -26,3 +26,5 @@ npm-debug.log
 *.exe
 *.out
 *.app
+nginx*
+package-lock.json

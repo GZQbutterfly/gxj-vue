@@ -12,3 +12,6 @@ Vue.component('pc-header', headerComponents);
 
 import footerComponents from '../components/footer/footer.vue';
 Vue.component('pc-footer', footerComponents);
+
+import backTop from "../components/backTop/backTop.vue";
+Vue.component('back-top', backTop);

@@ -5,10 +5,14 @@ import actions from './actions';
 import getters from './getters';
 
 import cache from './cache';
+import http from '../http';
+
+
 
 const store = new Vuex.Store({
     modules: {},
     state: {
+        $http: http(),
         cache
     },
     mutations,

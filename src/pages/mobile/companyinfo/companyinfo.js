@@ -1,4 +1,3 @@
-import BScroll from '../../../assets/bscroll/bscroll';
 
 export default {
     data() {
@@ -7,19 +6,14 @@ export default {
         }
     },
     mounted() {
+        document.title = '公司介绍';
         this.$nextTick(() => {
             this.initPage();
         });
     },
     methods: {
         initPage() {
-            this.bscroll = new  BScroll(this.$refs.companyinfoContainerRef,{
-                click: true,
-                scrollbar: {
-                    fade: true,
-                    interactive: false
-                },
-            })
+
         },
         goPath(item){
             this.$router.push(item.to);
