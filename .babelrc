@@ -26,15 +26,6 @@
                 "regenerator": true,
                 "moduleName": "babel-runtime"
             }
-        ],
-        [
-            "transform-modules",
-            {
-                "cube-ui": {
-                    "transform": "./node_modules/cube-ui/src/modules/${member}",
-                    "kebabCase": true
-                }
-            }
         ]
     ]
 }

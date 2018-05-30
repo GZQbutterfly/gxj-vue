@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "npm run buildPC && npm run  buildM",
         "buildPC": "webpack --config ./build/pc.prod.js",
-        "buildM": "webpack --config ./build/mobile.dev.js",
+        "buildM": "webpack --config ./build/mobile.prod.js",
         "buildProd": "webpack --config ./build/pc.prod.js &&  webpack --config ./build/mobile.prod.js",
         "prod": "npm run buildProd",
         "server": "node ./build/server.mobile.js",
@@ -22,8 +22,14 @@
     ],
     "transformModules": {
         "cube-ui": {
-            "transform": "cube-ui/src/modules/${member}",
-            "kebabCase": true
+            "transform": "cube-ui/lib/${member}",
+            "kebabCase": true,
+            "style": {
+                "ignore": [
+                    "create-api",
+                    "better-scroll"
+                ]
+            }
         }
     },
     "devDependencies": {
